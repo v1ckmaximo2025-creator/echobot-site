@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>EchoBot • Night City</title>
+    <style>
+        body {
+            background-color: #050014;
+            font-family: Arial, sans-serif;
+            color: #e6f7ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .neon {
+            font-size: 48px;
+            font-weight: bold;
+            color: #00aaff;
+            animation: neonPulse 2.2s infinite ease-in-out;
+            text-shadow:
+                0 0 8px #00aaff,
+                0 0 16px #00aaff,
+                0 0 30px #0088ff,
+                0 0 45px #0066ff;
+        }
+
+        @keyframes neonPulse {
+            0% {
+                text-shadow:
+                    0 0 5px #00aaff,
+                    0 0 10px #00aaff,
+                    0 0 20px #0088ff,
+                    0 0 35px #0066ff;
+            }
+            50% {
+                text-shadow:
+                    0 0 12px #33ccff,
+                    0 0 24px #33ccff,
+                    0 0 45px #00bbff,
+                    0 0 70px #0099ff;
+            }
+            100% {
+                text-shadow:
+                    0 0 5px #00aaff,
+                    0 0 10px #00aaff,
+                    0 0 20px #0088ff,
+                    0 0 35px #0066ff;
+            }
+        }
+
+        .card {
+            background: rgba(0, 20, 40, 0.5);
+            backdrop-filter: blur(5px);
+            border: 1px solid #005b8a;
+            border-radius: 12px;
+            padding: 20px;
+            width: 75%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        h2 {
+            color: #3ecbff;
+            text-shadow: 0 0 8px #00aaff;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            border: 2px solid #00aaff;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #00aaff;
+            text-decoration: none;
+            text-shadow: 0 0 6px #00aaff;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #00aaff;
+            color: #001024;
+            box-shadow: 0 0 16px #00aaff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="neon">EchoBot • Night City</h1>
+
+    <a class="button" href="https://discord.com/oauth2/authorize?client_id=1437929244029096066&permissions=271903830&integration_type=0&scope=bot">
+        + Adicionar ao Discord
+    </a>
+
+    <br><br>
+
+    <a class="button" href="https://discord.gg/JqmRMmMMuP">
+        Entrar no Servidor
+    </a>
+
+    <div class="card">
+        <h2>💰 Economia</h2>
+        <p>!saldo — Veja seu saldo e badge atual.</p>
+        <p>!daily — Pegue moedas diárias.</p>
+        <p>!trabalhar — Ganhe EcoCoins trabalhando.</p>
+        <p>!loja — Abra a loja e troque badges.</p>
+    </div>
+
+    <div class="card">
+        <h2>🎮 Diversão</h2>
+        <p>!eco &lt;mensagem&gt; — Ecoa sua mensagem.</p>
+        <p>!inspirar — Frase motivadora.</p>
+        <p>!dado — Role um dado.</p>
+        <p>!pergunta — Pergunte algo aleatório.</p>
+        <p>!piada — Receba uma piada.</p>
+    </div>
+
+    <div class="card">
+        <h2>🧠 Sistema</h2>
+        <p>!rank — Veja seu XP e nível.</p>
+        <p>!top — Top 5 jogadores.</p>
+        <p>!ping — Latência do bot.</p>
+    </div>
+
+    <div class="card">
+        <h2>🎄 Evento</h2>
+        <p><strong>Evento de Natal:</strong> 01 de Dezembro</p>
+    </div>
+
+</body>
+</html>
